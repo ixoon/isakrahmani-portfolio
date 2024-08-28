@@ -1,0 +1,63 @@
+@keyframes slideInFromLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideOutToLeft {
+    from {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+  }
+  
+  .mystory {
+    font-size: 4rem;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .mystory.visible {
+    animation: slideInFromLeft 1s forwards;
+  }
+  
+  .mystory.hidden {
+    animation: slideOutToLeft 1s forwards;
+  }
+  
+  .text{
+    font-size: 1.2rem;
+  }
+  
+  
+  /* Media queries za mobilne uređaje */
+  @media (max-width: 768px) {
+    .mystory {
+      font-size: 2rem; /* Manje veličine fonta za tablete i manje ekrane */
+    }
+  
+    .text {
+      font-size: 0.9rem; /* Manje veličine fonta za tablete i manje ekrane */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .mystory {
+      font-size: 2rem; /* Još manje veličine fonta za mobilne uređaje */
+    }
+  
+    .text {
+      font-size: 0.8rem; /* Još manje veličine fonta za mobilne uređaje */
+    }
+  }
+  

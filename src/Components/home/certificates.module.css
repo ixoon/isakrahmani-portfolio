@@ -1,0 +1,83 @@
+/* General container styling */
+.container {
+    margin-top: 80px; /* Manje margine za bolje prilagođavanje */
+}
+
+/* Styling for links */
+.link {
+    text-decoration: none;
+    color: hsl(hue, saturation, lightness); /* Pretpostavljam da koristiš varijable za boje */
+    position: absolute;
+    margin-left: 20px; /* Manje margine za bolje prilagođavanje */
+    margin-top: 20px; /* Manje margine za bolje prilagođavanje */
+}
+
+/* Keyframes for animations */
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutToLeft {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+/* Styling for certifications section */
+.certifications {
+    font-size: 3rem; /* Manja veličina za bolje prilagođavanje */
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.certifications.visible {
+    animation: slideInFromLeft 1s forwards;
+}
+
+.certifications.hidden {
+    animation: slideOutToLeft 1s forwards;
+}
+
+/* Media queries za mobilne uređaje */
+@media (max-width: 768px) {
+    .container {
+        margin-top: 60px; /* Manje margine za tablet i mobilne uređaje */
+    }
+
+    .link {
+        margin-left: 15px; /* Manje margine za tablet i mobilne uređaje */
+        margin-top: 15px; /* Manje margine za tablet i mobilne uređaje */
+    }
+
+    .certifications {
+        font-size: 2.5rem; /* Manje veličine za tablet i mobilne uređaje */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin-top: 40px; /* Još manje margine za mobilne uređaje */
+    }
+
+    .link {
+        margin-left: 10px; /* Još manje margine za mobilne uređaje */
+        margin-top: 10px; /* Još manje margine za mobilne uređaje */
+    }
+
+    .certifications {
+        font-size: 2rem; /* Još manje veličine za mobilne uređaje */
+    }
+}

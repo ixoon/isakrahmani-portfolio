@@ -1,0 +1,95 @@
+.container{
+    margin: 50px;
+}
+
+.getInTouch{
+    width: 130px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: hsl(273, 100%, 50%);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+}
+
+.getInTouch:hover{
+    background-color: hsl(273, 100%, 35%);
+}
+
+.projects{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.projects:hover{
+    background-color: black;
+    color: white;
+}
+
+.signature{
+    font-size: 1.3rem;
+    color: rgb(91, 90, 90);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 3px;
+    margin-left: 980px;
+}
+
+/* Stilovi za ekrane širine do 768px (tablet) */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px; /* Smanji marginu */
+    }
+
+    .getInTouch, .projects {
+        width: 100%; /* Napravi dugmadi punu širinu */
+        height: auto; /* Prilagodi visinu */
+        margin: 10px 0; /* Dodaj vertikalnu marginu */
+    }
+
+    .getInTouch {
+        font-size: 1.1rem; /* Smanji veličinu fonta */
+    }
+
+    .projects {
+        font-size: 1.1rem; /* Smanji veličinu fonta */
+    }
+
+    .signature {
+        font-size: 1.1rem; /* Smanji veličinu fonta */
+        margin-left: 0; /* Ukloni levu marginu */
+        text-align: center; /* Centriraj tekst */
+    }
+}
+
+/* Stilovi za ekrane širine do 480px (mobilni telefoni) */
+@media (max-width: 480px) {
+    .container {
+        margin: 10px; /* Dodatno smanji marginu */
+    }
+
+    .getInTouch, .projects {
+        width: 100%; /* Napravi dugmadi punu širinu */
+        height: 30px; /* Prilagodi visinu */
+        margin: 10px 0; /* Dodaj vertikalnu marginu */
+    }
+
+    .getInTouch {
+        font-size: 0.9rem; /* Dodatno smanji veličinu fonta */
+    }
+
+    .projects {
+        font-size: 0.9rem; /* Dodatno smanji veličinu fonta */
+    }
+
+    .signature {
+        font-size: 1rem; /* Dodatno smanji veličinu fonta */
+        margin-left: 0; /* Ukloni levu marginu */
+        text-align: center; /* Centriraj tekst */
+    }
+}

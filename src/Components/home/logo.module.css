@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.logo {
+    font-family:'Pacifico', cursive;
+    font-weight: bold;
+    color: #ffffff; /* Boja teksta */
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 5px 10px; /* Manje padding */
+    border-radius: 6px; /* Zaobljeni ivici */
+    background: linear-gradient(135deg, #007bff, #00d2ff); /* Gradient pozadina */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Manja senka oko loga */
+    max-width: 150px;
+  }
+  
+  .firstName {
+    font-size: 20px; /* Veći font za ime */
+    margin-right: 10px; /* Razmak između imena i prezimena */
+    color: #ffffff; /* Boja imena */
+  }
+  
+  .lastName {
+    font-size: 20px; /* Manji font za prezime */
+    color: #f8f9fa; /* Svetla boja za prezime */
+  }
+  
+  .logo::before {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 1px;
+    background-color: #ffffff; /* Boja linije */
+    bottom: -5px;
+    left: 20%;
+    border-radius: 1px; /* Zaobljenje ivica linije */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Manja senka linije */
+  }
+  

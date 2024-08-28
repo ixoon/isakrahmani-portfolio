@@ -1,0 +1,83 @@
+.footer {
+  padding: 20px 0;
+  border-top: 1px solid #d1d4d6;
+  margin-top: 30px;
+}
+
+.navList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navList li {
+  margin: 0 10px;
+}
+
+.navList a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 16px;
+}
+
+.navList a:hover {
+  text-decoration: underline;
+}
+
+.socialIcon {
+  font-size: 24px;
+  color: #007bff;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.socialIcon:hover {
+  color: hsl(211, 100%, 30%)
+}
+
+/* Flexbox adjustments to ensure alignment */
+.footer .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer .col-md-6.text-md-right {
+  text-align: right !important;
+}
+
+.footer .col-md-6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Media queries za dodatnu prilagodbu */
+@media (max-width: 768px) {
+  .navList {
+    flex-direction: column; /* Stvari u navList vertikalno na manjim ekranima */
+    align-items: center; /* Centrirano na manjim ekranima */
+  }
+
+  .navList li {
+    margin: 5px 0; /* Manji razmak između stavki */
+  }
+
+  .socialIcon {
+    font-size: 18px; /* Manja veličina ikona na manjim ekranima */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    font-size: 12px;
+    margin-top: 80px; /* Još manja veličina fonta za mobilne uređaje */
+  }
+
+  .socialIcon {
+    font-size: 16px; /* Još manja veličina ikona za mobilne uređaje */
+  }
+}

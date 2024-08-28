@@ -1,0 +1,114 @@
+.container{
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+.serviceCard {
+  padding: 25px; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  border: none;
+  background-color: #f8f9fa;
+  max-width: 350px; 
+  margin: auto;   
+}
+
+.serviceCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cardBody {
+  background-color: #ffffff;
+  color: #333;
+}
+
+.cardTitle {
+  color: #007bff;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.cardText {
+  margin-bottom: 30px; 
+  font-size: 16px; 
+}
+
+.orderButton {
+  background-color: hsl(273, 100%, 50%);
+  border-radius: 10px;
+  border: none;
+  text-decoration: none;
+  padding: 12px 24px; 
+  font-size: 16px; 
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.orderButton:hover {
+  background-color: hsl(273, 100%, 35%);
+  color: white;
+}
+
+.cardImage {
+  width: 60%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.serviceHeader{
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 30px;
+}
+
+/* Media queries za mobilne uređaje */
+@media (max-width: 768px) {
+  .serviceCard {
+    max-width: 95%; /* Širi maksimalna širina za tablete i manje ekrane */
+  }
+
+  .cardTitle {
+    font-size: 1rem; /* Manje veličine fonta za tablete i manje ekrane */
+  }
+
+  .cardText {
+    font-size: 12px; /* Manje veličine fonta za tablete i manje ekrane */
+  }
+
+  .orderButton {
+    padding: 6px 12px; /* Manje padding za tablete i manje ekrane */
+    font-size: 12px; /* Manje veličine fonta za tablete i manje ekrane */
+  }
+
+  .serviceHeader {
+    font-size: 1.5rem; /* Manje veličine fonta za tablete i manje ekrane */
+  }
+}
+
+@media (max-width: 480px) {
+  .serviceCard {
+    max-width: 80%; /* Pun širinu za mobilne uređaje */
+    padding: 8px; /* Još manji padding za mobilne uređaje */
+  }
+
+  .cardTitle {
+    font-size: 0.9rem; /* Još manje veličine fonta za mobilne uređaje */
+  }
+
+  .cardText {
+    font-size: 10px; /* Još manje veličine fonta za mobilne uređaje */
+  }
+
+  .orderButton {
+    padding: 6px 12px; /* Još manji padding za mobilne uređaje */
+    font-size: 10px; /* Još manji veličine fonta za mobilne uređaje */
+  }
+
+  .serviceHeader {
+    font-size: 2rem; /* Još manji veličine fonta za mobilne uređaje */
+  }
+}

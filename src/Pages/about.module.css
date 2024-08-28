@@ -1,0 +1,273 @@
+.aboutHeader {
+    margin-top: 70px;
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    background-color: hsl(273, 100%, 50%);
+    color: white;
+}
+
+.aboutH1 {
+    font-size: 4rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: 110px;
+}
+
+.imageContainer {
+    margin-left: 100px;
+    margin-top: 250px;
+    margin-bottom: 100px;
+    max-height: 700px;
+}
+
+.img {
+    width: 550px;
+    height: 700px;
+}
+
+.aboutTextContainer {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 600px;
+    margin-right: 80px;
+    max-width: 500px;
+}
+
+.aboutText {
+    color: #4b4b4b;
+    font-size: 1.2rem;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.infoRow {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.label {
+    font-weight: bold;
+    margin-right: 8px;
+    margin-top: 3px;
+}
+
+.value1 {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-left: 165px;
+}
+
+.value2 {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-left: 113px;
+}
+
+.value3 {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-left: 170px;
+}
+
+.value4 {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-left: 160px;
+}
+
+.footer {
+    padding: 20px 0;
+    border-top: 1px solid #d1d4d6;
+    margin-top: 130px;
+  }
+  
+  .navList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .navList li {
+    margin: 0 10px;
+  }
+  
+  .navList a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 16px;
+  }
+  
+  .navList a:hover {
+    text-decoration: underline;
+  }
+  
+  .socialIcon {
+    font-size: 24px;
+    color: #007bff;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .socialIcon:hover {
+    color: hsl(211, 100%, 30%)
+  }
+  
+  /* Flexbox adjustments to ensure alignment */
+  .footer .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .footer .col-md-6.text-md-right {
+    text-align: right !important;
+  }
+  
+  .footer .col-md-6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+    
+/* working css */
+.container{
+    margin: 50px;
+}
+
+.getInTouch{
+    width: 130px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: hsl(273, 100%, 50%);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+}
+
+.getInTouch:hover{
+    background-color: hsl(273, 100%, 35%);
+}
+
+.projects{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.projects:hover{
+    background-color: black;
+    color: white;
+}
+
+.signature{
+    font-size: 1.3rem;
+    color: rgb(91, 90, 90);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 3px;
+    margin-left: 980px;
+}
+
+/* Stilovi za ekrane širine do 768px (tablet) */
+@media (max-width: 768px) {
+    .imageContainer {
+        margin-left: 0;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        max-height: 400px;
+        text-align: center;
+    }
+
+    .img {
+        width: 100%;
+        height: auto;
+        margin: 10px;
+    }
+
+    .aboutTextContainer {
+        position: static;
+        margin-top: 0;
+        margin-right: 0;
+        max-width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .infoContainer {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutHeader {
+        margin-top: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 300px;
+        background-color: hsl(273, 100%, 50%);
+        color: white;
+        text-align: center;
+    }
+    
+    .aboutH1 {
+        font-size: 4rem;
+        margin-top: 0;
+    }
+    
+    .aboutText {
+        font-size: 1rem;
+    }
+
+    .value1 {
+        font-size: 1rem;
+        margin-left: 100px;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    .value2 {
+        font-size: 1rem;
+        margin-left: 48px;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    .value3 {
+        font-size: 1rem;
+        margin-left: 100px;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    .value4 {
+        font-size: 1rem;
+        margin-left: 90px;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    .signature {
+        margin-left: 0;
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+

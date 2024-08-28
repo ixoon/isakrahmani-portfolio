@@ -1,0 +1,23 @@
+.carouselWrapper {
+  width: 900px;
+  margin-top: 150px;
+  margin-left: 190px;
+  height: 500px;  
+  overflow: hidden;
+}
+
+.carouselWrapper img {
+  width: 100%; /* Postavlja slike da zauzimaju celu širinu */
+  height: 500px; /* Fiksna visina slike */
+  object-fit: cover; /* Osigurava da slike popune prostor bez iskrivljenja */
+}
+
+
+.header{
+  margin-left: 200px;
+  margin-top: 10px;
+}
+
+.description{
+  margin-left: 200px;
+}
